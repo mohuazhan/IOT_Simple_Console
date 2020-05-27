@@ -1,0 +1,20 @@
+.options {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+}
+.show_details {
+    background-color: rgba(170, 233, 238, 0.329);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: mymove 0.5s;
+}
+
+@keyframes mymove {
+    from { height: 0px; }
+    to { height: 100px; }
+}

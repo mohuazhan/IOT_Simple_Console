@@ -1,0 +1,22 @@
+<view style="background-color:#cccccc;height:600px;">
+  <view style="padding-top:10px;">
+    <view class="options">
+      <view style="font-weight:bold;margin-left:10px">开始接入 光敏传感器</view>
+      <view style="position:absolute;right:10px;">
+      <switch type="switch" bindchange="SwitchChange1"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="show_details" wx:if="{{select}}">
+    <view style="background-color: rgba(170, 233, 238, 0.329); height:50px;">{{data}}</view>
+  </view>
+
+  <view class="options">
+    <view style="font-weight:bold;margin-left:10px">开启 WIFI 模块呼吸灯</view>
+    <view style="position:absolute;right:10px;">
+    <switch type="switch" bindchange="SwitchChange1"/>
+    </view>
+  </view>
+
+</view>
